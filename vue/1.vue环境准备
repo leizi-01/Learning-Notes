@@ -1,0 +1,40 @@
+1.node安装，npm安装，配置npm的淘宝路径，安装git重启电脑
+2.安装webstorm
+3.全局安装vue 
+  npm install vue -g
+4.安装vue-cli
+  npm install vue-cli -g
+5.vue安装成功测试
+  vue -V
+  vue list
+6.vue+webpack简单流程操作
+  vue init webpack test --test是项目名字
+7.进入项目文件夹，shift+右键，选择“在此处打开命令窗口”
+  npm install 
+  此步骤就是安装package.json中预设，要装的插件。
+8.项目目录介绍
+  1.build，vue能进行模块化编写，就靠它配置文件
+  2.config，webpack能打包，就靠它配置文件
+  3.dist，这个是打包后才出现的文件夹。里面装的就是打包后的项目文件
+  4.node_modules，安装vue各种插件的地方
+  5.src，项目编写的地方 assets，装资源的地方，图片，字体等
+    components，装模块，或者网页的地方。文件均为**.vue
+
+    router，配置路由，哪个地址，分配component下的哪个网页
+
+    App.vue,本身就是个components挂在外面的index.html上。index相当于投资人，甩手掌柜，App.vue相当于职业经理人，网页的事它主管。
+
+    main.js,和主管App.vue配套的，主管js。
+  6.static，有它可以使用git项目版本管理
+  7.index.html，vue网页入口
+  8.package.json ,内置初始插件名称。后期再安装插件，npm i 插件名 --save ，可以保存进文件内
+9..vue可以看成是.html，都有标签代码区域，js区域，css样式区域。
+  又不同于.html，作用域都是独立的。所以js引用必须import导入，export导出。
+10.运行项目
+   npm run dev 
+   npm run build 
+   npm start
+11.
+   dev就是webpack的开发模式，开发模式，就是压缩文件之前 
+   build就是项目完成后开始压缩文件，文件夹中出现dist文件夹，里面就是压缩后的项目
+   进入dist文件夹，shift+右键，选择“在此处打开命令窗口” （运行项目）
