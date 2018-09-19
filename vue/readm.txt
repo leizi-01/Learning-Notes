@@ -9,7 +9,7 @@ vue 学习笔记
   git status 查看
   git log 查看历史
   git commit -m 提交本地
-  git push -u origin master（首次要提交用户名和密码)
+  git push -u origin master（首次提交远程,需要输入用户名和密码)
   git push origin master （再次提交可以不用输入用户名和密码)
 6.更新代码
   git status 本地有没有没有提交的，要先检查
