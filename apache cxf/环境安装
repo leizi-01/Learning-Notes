@@ -1,0 +1,44 @@
+CXF 项目的主页地址是：
+
+http://cxf.apache.org/
+
+下载地址是：
+
+http://cxf.apache.org/download.html
+
+可以下载 解压版也可以下载安装版的。 具体的下载页面如下:
+
+这里下载解压版就可以了。
+
+下载镜像地址：  http://mirror.bit.edu.cn/apache/cxf/3.0.1/apache-cxf-3.0.1.zip
+
+解压后的目录结构如下：
+
+
+
+bin目录下： 包含有一些 bat 的工具， 比如 wsdl2java.bat 可以把 wsdl 转化为java 代码。
+
+lib 目录下有cxf 使用的一些jar 包， 在实际开发中在项目中要导入这些jar 包
+
+其他的目录就不需要多介绍了。
+
+
+
+
+如果现在有一个wsdl 服务的地址：  http://xxxx/xx?wsdl
+
+在命令行模式下输入：
+
+wsdl2java.bat  -p com.oscar999  -client -encoding utf-8 -noAddressBinding  http://xxxx/xx?wsdl
+
+就可以产生代码了。
+
+说明：
+
+1.  注意命令行模式切换到 wsdl2java.bat 所在的目录(如果不是， 要写 .bat 所在的全路径)
+
+2. -p 后面配置的是代码所在的包名
+
+
+
+产生出来的有个类名比较长的以 _Client 结尾的java 文件 就是调用的测试文件， 里面包含 main 方法。
